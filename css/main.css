@@ -1195,6 +1195,8 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* Edit backgrond */
+
 .bg-specs{
   background-image: url(../img/blob-scatter-haikei.svg);
   width: 100%;
@@ -1666,8 +1668,8 @@ video {
     vertical-align: middle;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 

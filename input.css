@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Edit backgrond */
 .bg-specs{
     background-image: url(../img/blob-scatter-haikei.svg);
     width: 100%;
