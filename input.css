@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-specs{
+    background-image: url(../img/blob-scatter-haikei.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.popup {
+  background-color: #ffffff;
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.popup a{
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background: #0f72e5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
+}
+  .svg1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.svg1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    /* height: 150px; */
+    transform: rotateY(180deg);
+    color: #F29F05;
+}
+
+.svg1 .shape-fill {
+    fill: #F29F05;
+}
+
+  .custom-shape-divider-top-1660016144 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1660016144 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    /* height: 137px; */
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1660016144 .shape-fill {
+    fill: #F29F05;
+}
+.waves-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    
+}
+
+.waves2 svg {
+    /* background-color: aquamarine; */
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    /* height: 550px; */
+    transform: rotateY(180deg);
+}
+
+.waves2 .shape-fill {
+   fill:  #032859;
+    
+} 
+
+.bg-svg3{
+    background-image: url(../img/circles.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.waves-negative{
+    background-image: url(../img/wavesNegative.svg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ftbg {
+    background-color: #0E1025;
+
+}
+
+  
+  @media (max-width: 576px) {
+    body {
+      background-position: 50px -50px;
+      background-size: 500px;
+    }
+  
+    #cta {
+      background-image: url('../img/bg-simplify-section-mobile.svg');
+    }
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+  @keyframes swing {
+    20% {
+      -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotate(5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  
+  .swing {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
