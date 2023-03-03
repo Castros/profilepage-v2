@@ -32,7 +32,7 @@ window.onscroll = function () {
     }
 }
 
-// When the user clicks on the button, smoothy scroll to the top of the document
+// todfauWhen the user clicks on the button, smoothy scroll to the top of the document
 function goToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
