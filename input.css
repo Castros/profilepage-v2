@@ -11,6 +11,12 @@
     background-size: cover;
 }
 
+.desktop-view{
+  animation: bounce;
+  animation-duration: 3s;
+}
+
+
 .popup {
   background-color: #ffffff;
   width: 450px;
@@ -69,6 +75,8 @@
     transform: rotateY(180deg);
     color: #F29F05;
 }
+
+
 
 .svg1 .shape-fill {
     fill: #F29F05;
