@@ -3,10 +3,15 @@ const nav = document.getElementById('menu')
 const toTopButton = document.querySelector("#to-top-button");
 
 
-btn.addEventListener('click', () => {
-  btn.classList.toggle('open')
-  nav.classList.toggle('flex')
-  nav.classList.toggle('hidden')
+nav.classList.add('hidden');
+
+btn.addEventListener('click', function() {
+    if (nav.classList.contains('hidden')) {
+        nav.classList.remove('hidden');
+    } else {
+        nav.classList.add('hidden');
+    }
+    btn.classList.toggle('open');
 });
 
 // window.addEventListener("load", function () {

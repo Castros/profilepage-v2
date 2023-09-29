@@ -161,12 +161,25 @@
   }
   
   /* Hamburger Menu */
+  #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* or any sufficiently high value */
+    background-color: #F29F05;  /* or any desired color */
+}
+#menu-btn{
+  z-index: 1001
+}
+  
   .hamburger {
     cursor: pointer;
     width: 24px;
     height: 24px;
     transition: all 0.25s;
     position: relative;
+  
   }
   
   .hamburger-top,
