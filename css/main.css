@@ -1761,10 +1761,6 @@ video {
 }
 
 @media (min-width: 480px) {
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -1811,6 +1807,10 @@ video {
 
   .md\:shrink-0 {
     flex-shrink: 0;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1884,6 +1884,10 @@ video {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .md\:text-left {
@@ -1968,10 +1972,6 @@ video {
 }
 
 @media (min-width: 1440px) {
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .xl\:flex-row {
     flex-direction: row;
   }
