@@ -170,7 +170,8 @@
     background-color: #F29F05;  /* or any desired color */
 }
 #menu-btn{
-  z-index: 1001
+  z-index: 1001;
+ 
 }
   
   .hamburger {
@@ -188,11 +189,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
+    width: 30px;
     height: 2px;
-    background: #000;
+    background: #D9D9D9;
     transform: rotate(0);
     transition: all 0.5s;
+    
   }
   
   .hamburger-middle {
@@ -210,6 +212,7 @@
   
   .open .hamburger-top {
     transform: rotate(45deg) translateY(6px) translate(6px);
+    color: red;
   }
   
   .open .hamburger-middle {
@@ -219,6 +222,20 @@
   .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
   }
+
+  .delay-2-5s {
+    animation-delay: 2.8s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.5); /* Makes the SVG 1.5 times bigger */
+}
 
   @keyframes swing {
     20% {
