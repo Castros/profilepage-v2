@@ -76,7 +76,9 @@
     color: #F29F05;
 }
 
-
+/* #projects-list{
+  background-color: #034873;
+} */
 
 .svg1 .shape-fill {
     fill: #F29F05;
@@ -123,7 +125,7 @@
 }
 
 .waves2 .shape-fill {
-   fill:  #032859;
+   fill:  #D9D9D9;
     
 } 
 

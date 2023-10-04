@@ -14,6 +14,25 @@ btn.addEventListener('click', function() {
     btn.classList.toggle('open');
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.toggle-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Hide all content divs
+            document.querySelectorAll('.content').forEach(div => {
+                div.classList.add('hidden');
+            });
+
+            // Show the clicked content
+            const targetId = this.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            targetContent.classList.remove('hidden');
+        });
+    });
+});
+
+
+
 // window.addEventListener("load", function () {
 //   setTimeout(
 //     function open(event) {
@@ -37,6 +56,8 @@ window.onscroll = function () {
       toTopButton.classList.add("hidden");
   }
 }
+
+
 
 // todfauWhen the user clicks on the button, smoothy scroll to the top of the document
 function goToTop() {
