@@ -383,7 +383,7 @@
 
     <!-- Work Experience Section -->
     <section id="work-experience" class="bg-svg3">
-        <div class="md:h-screen justify-center">
+        <div class="md:h-screen">
             <div class="waves2">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -403,17 +403,22 @@
                 Work Exprience
             </h2>
 
-            <div class="mt-10 flex flex-row  px-16">
+            <div class=" mt-10 flex flex-col md:flex-row px-16 ">
                 
                 <!-- Work Experience Titles -->
-                <div class="w-1/3 ml-16">
-                    <button class="toggle-button p-2 w-full text-left" data-target="content1">Oxford School</button>
+                <!-- <div class="w-1/3 ml-16">
+                    <button class="toggle-button p-2 w-full text-left" data-target="content1 contentm2">Oxford School</button>
+                    <div id="contentm2" class="content block md:hidden">
+                        Details about Oxford School Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit turpis aliquet nunc mollis, vel lacinia mauris rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In non mattis velit, et condimentum tellus. Aenean at odio nec nisl vehicula sodales vitae vel tortor. Nullam iaculis mollis mauris a cursus. Vestibulum a dapibus elit, non semper eros. Praesent mattis facilisis lacus, eu pharetra nisi gravida nec. Pellentesque sagittis odio id augue accumsan imperdiet. Nam a dapibus justo, eu luctus nisl. Quisque est nunc, aliquet ac aliquam in, tempus et est. Suspendisse posuere vehicula erat, in auctor diam tincidunt at. Aenean lectus mauris, interdum in bibendum ut, condimentum nec urna. Suspendisse sodales ante quam, ut semper quam ullamcorper vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce non nunc erat.
+
+                        Donec auctor congue ipsum, eget ultrices lacus finibus non. Nulla molestie odio eget tellus dictum lacinia. Praesent a blandit velit. Integer faucibus placerat libero, in dapibus ex scelerisque non. Sed consectetur, lacus non tincidunt maximus, lectus lorem feugiat leo, a tincidunt est ligula vel nibh. Etiam dictum ultrices est iaculis accumsan. Aenean in mollis enim. Nunc et rhoncus urna. Proin est urna, efficitur non ante in, eleifend molestie massa. Nam ac metus a augue consequat pharetra in eu mauris. Aliquam eget bibendum odio, non efficitur justo....
+                    </div>
                     <button class="toggle-button p-2 w-full text-left mt-4" data-target="content2">WGU</button>
                     <button class="toggle-button p-2 w-full text-left mt-4" data-target="content3">GeekHeadSolutions</button>
-                </div>
+                </div> -->
             
                 <!-- Work Experience Details -->
-                <div class="w-2/3 ml-1">
+                <!-- <div class="hidden md:block w-2/3 ml-1">
                     <div id="content1" class="content hidden">
                         Details about Oxford School Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit turpis aliquet nunc mollis, vel lacinia mauris rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In non mattis velit, et condimentum tellus. Aenean at odio nec nisl vehicula sodales vitae vel tortor. Nullam iaculis mollis mauris a cursus. Vestibulum a dapibus elit, non semper eros. Praesent mattis facilisis lacus, eu pharetra nisi gravida nec. Pellentesque sagittis odio id augue accumsan imperdiet. Nam a dapibus justo, eu luctus nisl. Quisque est nunc, aliquet ac aliquam in, tempus et est. Suspendisse posuere vehicula erat, in auctor diam tincidunt at. Aenean lectus mauris, interdum in bibendum ut, condimentum nec urna. Suspendisse sodales ante quam, ut semper quam ullamcorper vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce non nunc erat.
 
@@ -429,15 +434,44 @@
 
                         Donec auctor congue ipsum, eget ultrices lacus finibus non. Nulla molestie odio eget tellus dictum lacinia. Praesent a blandit velit. Integer faucibus placerat libero, in dapibus ex scelerisque non. Sed consectetur, lacus non tincidunt maximus, lectus lorem feugiat leo, a tincidunt est ligula vel nibh. Etiam dictum ultrices est iaculis accumsan. Aenean in mollis enim. Nunc et rhoncus urna. Proin est urna, efficitur non ante in, eleifend molestie massa. Nam ac metus a augue consequat pharetra in eu mauris. Aliquam eget bibendum odio, non efficitur justo.
                     </div>
+                </div> -->
+                <!-- New View -->
+                <div class=" md:w-1/3 ml-16 work-exp">
+                    <!-- Mobile View -->
+                    <button class="toggle-button p-2 w-full text-left md:hidden active-work-title" data-target="content1-mobile">Oxford School</button>
+                    <div id="content1-mobile" class="content hidden md:hidden">
+                        Details about Oxford School...
+                    </div>
+                    <button class="toggle-button p-2 w-full text-left md:hidden active-work-title" data-target="content2-mobile">WGU</button>
+                    <div id="content2-mobile" class="content hidden md:hidden">
+                        Details about Oxford School...
+                    </div>
+                    <button class="toggle-button p-2 w-full text-left md:hidden active-work-title" data-target="content-mobile">WGU</button>
+                    <div id="content3-mobile" class="content hidden md:hidden">
+                        Details about Oxford School...
+                    </div>
+                    
+                    <!-- Desktop View -->
+                    
+                    <button class="toggle-button p-2 w-full text-left hidden md:block active-work-title" data-target="content1-desktop">Oxford School</button>
+                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 active-work-title" data-target="content2-desktop">WGU</button>
+                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 active-work-title" data-target="content3-desktop">GeekHeadSolutions</button>
                 </div>
-            </div>
-        
-            
-            
-        </div>
-
-     
-        
+                
+                <!-- Work Experience Details for Desktop -->
+                <div class="w-2/3 ml-1 hidden md:block">
+                    <div id="content1-desktop" class="content hidden">
+                        Details about Oxford School...
+                    </div>
+                    <div id="content2-desktop" class="content hidden mt-4">
+                        Details about WGU...
+                    </div>
+                    <div id="content3-desktop" class="content hidden mt-4">
+                        Details about GeekHeadSolutions...
+                    </div>
+                </div>
+            </div>    
+        </div>   
     </section>
 
 

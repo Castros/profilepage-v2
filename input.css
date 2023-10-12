@@ -145,6 +145,16 @@
     background-size: cover;
 }
 
+.work-exp{
+  border-left: 2px solid red;
+
+}
+.toggle-button {
+  transition: border-bottom 0.3s ease-in-out;
+}
+.active-work-title{
+  border-bottom: 2px solid #0E1025;
+}
 .ftbg {
     background-color: #0E1025;
 

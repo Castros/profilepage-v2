@@ -23,13 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 div.classList.add('hidden');
             });
 
+            // Remove active class from all buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('active-work-title');
+            });
+ 
+
             // Show the clicked content
             const targetId = this.getAttribute('data-target');
             const targetContent = document.getElementById(targetId);
             targetContent.classList.remove('hidden');
+            this.classList.add('active-work-title')
         });
     });
 });
+
+// document.querySelectorAll(".toggle-button").forEach(btn => {
+//     btn.addEventListener("click", (e) => {
+//         const targetId = e.currentTarget.getAttribute("data-target");
+//         document.getElementById(targetId).classList.toggle("hidden");
+//     });
+// });
 
 
 
