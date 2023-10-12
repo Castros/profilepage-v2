@@ -1441,8 +1441,12 @@ video {
   transition: border-bottom 0.3s ease-in-out;
 }
 
+.work-exp .toggle-button:first-of-type::before {
+  opacity: 1;
+}
+
 .active-work-title{
-  border-bottom: 2px solid #0E1025;
+  border-bottom: 2px solid red;
 }
 
 .ftbg {

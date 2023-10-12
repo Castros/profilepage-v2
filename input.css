@@ -149,12 +149,20 @@
   border-left: 2px solid red;
 
 }
+
 .toggle-button {
   transition: border-bottom 0.3s ease-in-out;
 }
-.active-work-title{
-  border-bottom: 2px solid #0E1025;
+.work-exp .toggle-button:first-of-type::before {
+  opacity: 1;
 }
+
+
+.active-work-title{
+  border-bottom: 2px solid red;
+}
+
+
 .ftbg {
     background-color: #0E1025;
 
