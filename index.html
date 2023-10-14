@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/bf381e8ade.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/aos.css" />
     <title>CG Castro</title>
 </head>
 
@@ -128,8 +129,8 @@
                     About
                     Me</h1>
                 <br>
-                <div class="about-me">
-                    <p class="text-center text-White1 md:text-left md:text-2xl"> HI! My
+                <div class="about-me" data-aos="fade-down-left">
+                    <p class="text-center text-White1 md:text-left md:text-2xl" > HI! My
                         name is Cristian and I enjoy working with all types of tech. My interset started when I built my
                         first gaming computer and then converted into a hackintosh. I have been working with all types
                         of
@@ -146,7 +147,7 @@
                         their business needs. </p>
                 </div>
             </div>
-            <div class="md:w-2/5 md:flex flex items-center justify-center mt-10">
+            <div class="md:w-2/5 md:flex flex items-center justify-center mt-10" data-aos="fade-up">
                 <img class="pic1 rounded-full -scale-x-100 md:shrink-0" src="img/po2.JPG" alt="">
             </div>
         </div>
@@ -204,7 +205,7 @@
                                     <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
                                 </li>
                                 <li class="p-2">
-                                    <img src="img/Tailwind_CSS_Logo.svg.png" alt=""></i>
+                                    <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
                                 </li>
 
                             </ul>
@@ -310,70 +311,67 @@
 
 
         <!-- Small Screens Only -->
-<div class="md:hidden container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
-    <div
-    class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition">
-    <figure class="max-h-64 aspect-square overflow-hidden">
-        <img class="w-full h-full object-cover transition group-hover:scale-125"
-        src="img/pro2.png" />
-    </figure>
-    <div class="p-4">
-        <h3 class="text-xl font-bold">Maluhia Hospice</h3>
-        <p class="font-serif">Landing Page for Hospice in South Texas,
-            United States</p>
+<div>
+    <div class="md:hidden container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
+        <div
+            class="group inline-block pb-4 bg-gradient-to-tr from-blue-600 to-teal-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition mb-11" data-aos="fade-up-right">
+            <figure class=" aspect-square overflow-hidden">
+                <img class="w-full h-full object-cover transition group-hover:scale-125" src="img/pp-pro.png" />
+            </figure>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Portfoio Page</h3>
+                <p class="font-serif">Global</p>
+            </div>
+            <footer class="flex gap-2 px-4">
+                <ul class="flex justify-around mx-auto mt-4 pt-1">
+                    <li class="p-2">
+                        <i class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <img src="img/Tailwind_CSS_Logo.svg.png" alt=""><!-- <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i> -->
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+
+
+        <div
+            class="group inline-block pb-4 bg-gradient-to-tr from-emerald-600 to-cyan-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition mb" data-aos="fade-down-left">
+            <figure class="aspect-square overflow-hidden">
+                <img class="w-full h-full object-cover transition group-hover:scale-125" src="img/pro2.png" />
+            </figure>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Maluhia Hospice</h3>
+                <p class="font-serif">Landing Page for Hospice in South Texas,
+                    United States</p>
+            </div>
+            <footer class="flex gap-2 px-4">
+                <ul class="flex justify-around mx-auto mt-4 pt-1">
+                    <li class="p-2">
+                        <i class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i>
+                    </li>
+
+                </ul>
+
+            </footer>
+        </div>
     </div>
-    <footer class="flex gap-2 px-4">
-        <ul class="flex justify-around mx-auto mt-4 pt-1">
-            <li class="p-2">
-                <i
-                    class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i>
-            </li>
-
-        </ul>
-        
-    </footer>
-</div>
-
-<div
-    class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition">
-    <figure class="max-h-64 aspect-square overflow-hidden">
-        <img class="w-full h-full object-cover transition group-hover:scale-125"
-        src="img/pro2.png" />
-    </figure>
-    <div class="p-4">
-        <h3 class="text-xl font-bold">Maluhia Hospice</h3>
-        <p class="font-serif">Landing Page for Hospice in South Texas,
-            United States</p>
-    </div>
-    <footer class="flex gap-2 px-4">
-        <ul class="flex justify-around mx-auto mt-4 pt-1">
-            <li class="p-2">
-                <i
-                    class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
-            </li>
-            <li class="p-2">
-                <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i>
-            </li>
-
-        </ul>
-        
-    </footer>
-</div>
 </div>
 
     </section>
@@ -513,6 +511,10 @@
             class="fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
     </div>
     <script src="js/script.js?v=1.0.2" crossorigin="anonymous"></script>
+    <script src="dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
