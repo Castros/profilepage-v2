@@ -13,6 +13,33 @@ btn.addEventListener('click', function() {
     btn.classList.toggle('open');
 });
 
+document.getElementById('menu-btn').addEventListener('click', function() {
+    const menuLinks = document.querySelectorAll('#menu-a');
+
+    menuLinks.forEach((link, index) => {
+        if(link.classList.contains('hidden')) {
+            setTimeout(() => {
+                link.classList.remove('hidden');
+                link.classList.add('animate__fadeIn');
+            }, index * 400); // Delay increases for each link
+        } else {
+            link.classList.add('hidden');
+            link.classList.remove('animate__fadeIn');
+        }
+    });
+});
+
+
+
+
+
+
+
+  
+  
+  
+  
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     const buttons = document.querySelectorAll('.toggle-button');
 
