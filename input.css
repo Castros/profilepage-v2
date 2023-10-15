@@ -146,11 +146,12 @@
 }
 
 .work-exp{
-  border-left: 2px solid red;
+  border-left: 3px solid red;
 
 }
 
 .toggle-button {
+  width: 80%;
   transition: border-bottom 0.3s ease-in-out;
 }
 .work-exp .toggle-button:first-of-type::before {
@@ -159,8 +160,21 @@
 
 
 .active-work-title{
-  border-bottom: 2px solid red;
+  width: 75%;
+  border-bottom: 3px solid  green;
+  /* border-bottom-color:  linear-gradient(rgb(239, 65, 45), rgb(79, 41, 32)); */
+  
+  
 }
+
+
+/* .active-work-title:after {
+  content: '';
+  display: block;
+  /* position: relative; */
+  /* width: 80%;
+  border: 2px solid #898989;
+  margin-top: 8px; } */ */
 
 
 .ftbg {

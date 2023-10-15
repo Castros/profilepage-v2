@@ -13,11 +13,43 @@ btn.addEventListener('click', function() {
     btn.classList.toggle('open');
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const buttons = document.querySelectorAll('.toggle-button');
+
+//        // Apply the active class to the first button on page load
+//     // buttons[0].classList.add('active-work-title');
+
+//     buttons.forEach(button => {
+//         button.addEventListener('click', function() {
+//             // Hide all content divs
+//             document.querySelectorAll('.content').forEach(div => {
+//                 div.classList.add('hidden');
+//             });
+
+//             // Remove active class from all buttons
+//             buttons.forEach(btn => {
+//                 btn.classList.remove('active-work-title');
+//             });
+ 
+//             // Show the clicked content
+//             const targetId = this.getAttribute('data-target');
+//             const targetContent = document.getElementById(targetId);
+//             targetContent.classList.remove('hidden');
+//             this.classList.add('active-work-title')
+//         });
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.toggle-button');
 
-       // Apply the active class to the first button on page load
-    // buttons[0].classList.add('active-work-title');
+    // Apply the active class to the first visible button on page load
+    for (let button of buttons) {
+        if (button.offsetParent !== null) {  // This checks if the button is visible
+            button.classList.add('active-work-title');
+            break;  // Exit the loop once the first visible button is found
+        }
+    }
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -30,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             buttons.forEach(btn => {
                 btn.classList.remove('active-work-title');
             });
- 
+
             // Show the clicked content
             const targetId = this.getAttribute('data-target');
             const targetContent = document.getElementById(targetId);
@@ -39,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 // When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function () {
