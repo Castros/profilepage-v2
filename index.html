@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This a web developer Portfolio website. I create webpages work with opensource apps and work with VM's.">
     <meta name="keywords" content="web developer, developer, desarrollo, javascript, sheets, scripts, html, css, python">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1.0.3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/bf381e8ade.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/aos.css" />
     <title>CG Castro</title>
 </head>
 
-<body class="bg-Blue1">
+<body class="">
 
 
 
@@ -33,65 +34,55 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="pt-2">
-                    <img class="h-[100px] w-[100px]" src="img/pplogo.png" alt="" />
+                    <img class="animate__animated animate__bounceInLeft animate__delay-1s h-[100px] w-[100px]" src="img/pplogo.png" alt="" />
                 </div>
-                <!-- Menu Items -->
-
-                <div class="animate__animated animate__rubberBand hidden text-center px-7 py-4 space-x-6 md:flex text-White2">
-                    <a href="#/" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Home</a>
-                    <a href="#aboutme" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">About Me</a>
-                    <a href="#projects-list" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Projects</a>
-                    <a href="#work-experience" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Work</a>
-
-                    <!-- Button -->
-                    <a href="https://drive.google.com/file/d/1qY81AkUDQlDmrKeRKoMNI8-ltlD9cD2z/view?usp=sharing"
-                        class=" p-3 px-6 pt-2 border border-Orange1  bg-transparent rounded-md baseline hover:bg-Orange1 hover:font-bold hover:text-White1 hidden md:block"
-                        target="_blank">Resume</a>
-                </div>
-                <!-- Hamburger Icon -->
+      
 
 
-                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                    <span class="hamburger-top"></span>
+                <button id="menu-btn" class="block hamburger focus:outline-none mr-6 animate__animated animate__bounceInRight animate__delay-2s">
+                    <span class="hamburger-top z-51"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
                 </button>
             </div>
 
             <!-- Mobile Menu -->
-            <div class="md:hidden">
-                <div id="menu"
-                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10">
-                    <a href="#" class="hover:text-darkGrayishBlue">About Me</a>
-                    <a href="#" id="projects" class="hover:text-darkGrayishBlue">Projects</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">Work</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
-                </div>
+            <div class="">
+                <div id="menu" class="absolute top-0 left-0 w-full text-2xl">
+                    <div class=" space-y-4 text-center">
+                        <a href="#about-me" id="menu-a" class=" py-2 hover:bg-Blue1 hover:text-Orange1 animate__animated hidden" >About Me</a>
+                        <a href="#projects-list" class="block py-2 hover:bg-Blue1 hover:text-Orange1">Projects</a>
+                        <a href="#work-experience" class="block py-2 hover:bg-Blue1 hover:text-Orange1">Work</a>
+                        <a href="#contact-info" class="block py-2 hover:bg-Blue1 hover:text-Orange1" data-aos="fade-up"
+                        data-aos-delay="300">Contact</a>
+                    </div>
             </div>
 
         </nav>
 
 
         <!-- Flex Container -->
-        <div class="container flex flex-col md:flex-row mx-auto md:px-56 items-stretch">
+        <div id="about-me" class="container flex flex-col md:flex-row mx-auto md:px-56 items-stretch">
             <!-- Left iten -->
             <div class="flex flex-col xs:pb-20 cent xs:pt-6 md:h-screen md:align-middle">
 
                 <div class="tracking-wide md:pt-16">
-                    <p class="animate__animated animate__bounce max-w-lg text-Orange1 md:text-1xl md:text-left">Hi, my
+                    <p class="animate-section animate__animated animate__bounceInDown animate__delay-1s max-w-lg text-Orange1 md:text-1xl md:text-left">Hi, my
                         name is
                     </p>
-                    <h1 class="max-w-md text-4xl md:whitespace-nowrap font-bold md:text-6xl text-White1 md:text-left">
+                    <h1 class="max-w-md text-4xl md:whitespace-nowrap font-bold md:text-6xl text-White1 md:text-left animate__animated  animate__flipInY delay-2-5s">
                         Cristian Castro. </h1>
-                    <h3 class="text-White2 text-6xl my-2 font-bold md:text-left">
+                    <h3 class="animate-section animate__animated animate__bounceInUp animate__delay-1s text-White2 text-6xl my-2 font-bold md:text-left">
                         Testing things out on the internet</h3>
                     <!-- <p class="max-w-lg text-White2 md:text-[18px] md:text-left">
                             I'm an IT specialist who loves all things tech. From Layer 1 to layer 7.</p> -->
                 </div>
-                <div class="flex md:justify-end md:pt-4">
-                    <a href="#"
+                <div class="flex md:justify-end md:pt-4 hover:font-bold animate__animated animate__bounceInRight animate__delay-2s ">
+                    <!-- <a href="#"
                         class="p-3 px-6 pt-2 border border-Orange1 text-White2 bg-transparent rounded-md baseline hover:bg-Orange1 hover:font-bold hover:text-White1">Contact
-                        Me</a>
+                        Me</a> -->
+                        <a href="https://wa.me/+528999595973" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 "><span class="text-White2 hover:font-bold hover:text-White1 p-3 ">Let's have a chat</span><svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512" class="icon"  ><path  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" fill="#F29F05" /></svg></a>
+                        <!-- <i class="fa-brands fa-whatsapp fa-2xl text-Orange1 hover:bg-blue-600"></i> -->
                 </div>
             </div>
 <!-- Whats -->
@@ -126,8 +117,8 @@
                     About
                     Me</h1>
                 <br>
-                <div class="about-me">
-                    <p class="text-center text-White1 md:text-left md:text-2xl"> HI! My
+                <div class="about-me" data-aos="fade-down-left">
+                    <p class="text-center text-White1 md:text-left md:text-2xl" > HI! My
                         name is Cristian and I enjoy working with all types of tech. My interset started when I built my
                         first gaming computer and then converted into a hackintosh. I have been working with all types
                         of
@@ -144,7 +135,7 @@
                         their business needs. </p>
                 </div>
             </div>
-            <div class="md:w-2/5 md:flex flex items-center justify-center">
+            <div class="md:w-2/5 md:flex flex items-center justify-center mt-10" data-aos="fade-up" data-aos-delay="500">
                 <img class="pic1 rounded-full -scale-x-100 md:shrink-0" src="img/po2.JPG" alt="">
             </div>
         </div>
@@ -152,7 +143,7 @@
 
     </section>
 
-    <div class="custom-shape-divider-top-1660016144 m:h-screen">
+    <div class="custom-shape-divider-top-1660016144 m:h-screen bg-Grey1">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
                 d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -166,10 +157,10 @@
         </svg>
     </div>
     <!-- Features Section -->
-    <section id="projects-list" href="#projects">
+    <section id="projects-list" class="bg-Grey1" href="#projects">
 
-        <div class="max-w-5xl md:h-screen px-2 mx-auto mt-10 text-center">
-            <h2 class="text-4xl font-bold text-center text-White1">
+        <div class="max-w-5xl md:h-screen px-2 mx-auto text-center">
+            <h2 class="text-4xl pt-10 font-bold text-center text-Blue2">
                 Some projects I have created
             </h2>
             <!--Project List  -->
@@ -181,17 +172,15 @@
                         class="relative border-none rounded-2xl flex w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-Blue2">
 
                         <div aria-details="image"
-                            class="relative min-w-xm w-[300px] scale-50 h-full bg-white flex justify-center items-center p-6">
-                            <img class="max-w-max scale-150 transition duration-300 ease-out" src="img/pro2.png" />
+                            class="relative min-w-xm w-[300px] scale-50 bg-white flex justify-center items-center p-6 border">
+                            <img class="max-w-max relative transition duration-300 ease-out" src="img/pp-pro.png" />
                         </div>
                         <div aria-details="details"
                             class=" relative min-w-sm h-full flex p-6 flex-col justify-center transition delay-700 ease-in-out ">
-                            <h1 class="text-2xl font-extrabold tracking-tight text-White1 sm:text-3xl">Maluhia Hospice
+                            <h1 class="text-2xl font-extrabold tracking-tight text-White1 sm:text-3xl">My Portfolio Page
                             </h1>
 
-                            <p class="text-md font-normal text-center text-White2 pt-2">Landing Page for Hospice in
-                                South Texas,
-                                United States </p>
+                            <p class="text-md font-normal text-center text-White2 pt-2">Global </p>
                             <ul class="flex justify-around my-4 pt-1 place-items-center">
                                 <li class="p-2">
                                     <i
@@ -204,7 +193,7 @@
                                     <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
                                 </li>
                                 <li class="p-2">
-                                    <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i>
+                                    <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
                                 </li>
 
                             </ul>
@@ -261,7 +250,7 @@
                 </div>
                 <!-- Third Site -->
 
-                <div class="-scale-x-100 hidden flex-col items-center p-2 space-y-6 round-lg md:flex">
+                <div class="hidden -scale-x-100 flex-col items-center p-2 space-y-6 round-lg md:flex">
                     <div aria-details="card"
                         class="relative flex rounded-2xl w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-gray-100">
 
@@ -310,30 +299,70 @@
 
 
         <!-- Small Screens Only -->
-        
-        <div class="md:hidden container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
-    <div
-    class="group inline-block pb-4 bg-gradient-to-tr from-purple-600 to-orange-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition">
-    <figure class="max-h-64 aspect-square overflow-hidden">
-        <img class="w-full h-full object-cover transition group-hover:scale-125"
-        src="https://images.unsplash.com/photo-1649168916853-8bdb50116941?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0OTQ0MzY5Nw&ixlib=rb-1.2.1&q=80&w=400" />
-    </figure>
-    <div class="p-4">
-        <h3 class="text-xl font-bold">Card Title</h3>
-        <p class="font-serif">Lorem ipsum dolor sit amet</p>
+<div>
+    <div class="md:hidden container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
+        <div
+            class="group inline-block pb-4 bg-gradient-to-tr from-blue-600 to-teal-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition mb-11" data-aos="fade-up-right">
+            <figure class=" aspect-square overflow-hidden">
+                <img class="w-full h-full object-cover transition group-hover:scale-125" src="img/pp-pro.png" />
+            </figure>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Portfoio Page</h3>
+                <p class="font-serif">Global</p>
+            </div>
+            <footer class="flex gap-2 px-4">
+                <ul class="flex justify-around mx-auto mt-4 pt-1">
+                    <li class="p-2">
+                        <i class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <img src="img/Tailwind_CSS_Logo.svg.png" alt=""><!-- <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i> -->
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+
+
+        <div
+            class="group inline-block pb-4 bg-gradient-to-tr from-emerald-600 to-cyan-400 text-white overflow-hidden rounded-2xl shadow hover:shadow-md transition mb" data-aos="fade-down-left">
+            <figure class="aspect-square overflow-hidden">
+                <img class="w-full h-full object-cover transition group-hover:scale-125" src="img/pro2.png" />
+            </figure>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Maluhia Hospice</h3>
+                <p class="font-serif">Landing Page for Hospice in South Texas,
+                    United States</p>
+            </div>
+            <footer class="flex gap-2 px-4">
+                <ul class="flex justify-around mx-auto mt-4 pt-1">
+                    <li class="p-2">
+                        <i class="fa-brands fa-html5 fa-2xl justify-self-start hover:text-red-700 hover:scale-150"></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-css3-alt fa-2xl hover:text-orange-700 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-square-js fa-2xl hover:text-sky-600 hover:scale-150 "></i>
+                    </li>
+                    <li class="p-2">
+                        <i class="fa-brands fa-bootstrap fa-2xl hover:text-purple-700 hover:scale-150 "></i>
+                    </li>
+
+                </ul>
+
+            </footer>
+        </div>
     </div>
-    <footer class="flex gap-2 px-4">
-        <button class="text-blue-400 hover:text-red-400">
-            <i class="fa-solid fa-heart"></i>
-        </button>
-        <button class="text-blue-400 hover:text-red-400">
-            <i class="fa-solid fa-comment"></i>
-        </button>
-    </footer>
-</div>
 </div>
 
-    </section>
+</section>
 
 
 
@@ -356,112 +385,138 @@
                 </svg>
             </div>
             <!-- Title -->
-            <h2 class="text-4xl font-bold py-14 text-center">
+            <h2 class="text-4xl font-bold py-7 text-center">
                 Work Exprience
             </h2>
-            <div class="container mx-auto">
-                <div class="">
-                    <!-- JOB 1 -->
-                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 pt-20 pb-10 lg:pt-40 lg:pb-20"
-                        style="cursor: auto;">
-                        <div class="p-6 bg-gray-100 rounded-lg border-2">
-                            <div class="mb-5 text-2xl font-bold">
-                                Grupo Oxford Educativo
-                            </div>
 
-                            <h3 class="text-lg font-semibold mb-2">
-                                IT Coordination/Wore Many Hats
-                            </h3>
-
-                            <p class="text-sm leading-6 text-gray-600">
-                                In charge of the tech department with a team of 4 including myself. We handled
-                                infrastructure, service desk, technical support, vendors, inventory management,training
-                                personel and many other activities.
-                            </p>
-
-                        </div>
-                        <!-- JOB 2 -->
-                        <div class="p-6 bg-gray-100 rounded-lg border-2">
-
-                            <div class="mb-5 text-2xl font-bold">
-                                WGU
-                            </div>
-
-                            <h3 class="text-lg font-semibold mb-2">
-                                NOC ENGINNER
-                            </h3>
-
-                            <p class="text-sm leading-6 text-gray-600">
-                                Responsible for monitoring, maintaining, alerting, and optimizing the performance of
-                                computer networks and network infrastructure.
-                            </p>
-
-
-                        </div>
-                        <!-- JOB 3 -->
-                        <div class="p-6 bg-gray-100 rounded-lg border-2" style="cursor: auto;">
-
-                            <div class="mb-5 text-2xl font-bold">
-                                Geek Head Solutions
-                            </div>
-
-                            <h3 class="text-lg font-semibold mb-2">
-                                IT Coordination/Wore Many Hats
-                            </h3>
-
-                            <p class="text-sm leading-6 text-gray-600">
-                                Metus potenti velit sollicitudin porttitor magnis elit lacinia tempor varius, ut cras
-                                orci vitae parturient id nisi vulputate consectetur, primis venenatis cursus tristique
-                                malesuada viverra congue risus.
-                            </p>
-
-                        </div>
-
+            <div class=" mt-10 flex flex-col md:flex-row "> 
+                <!-- New View -->
+                <div class=" md:w-1/3 ml-1 work-exp mb-5 ">
+                    <!-- Mobile View -->
+                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content1-mobile">Westerns GU - Noc Enginner</button>
+                    <div id="content1-mobile" class="content hidden md:hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content2-mobile">The Oxford School - IT Coordinator</button>
+                    <div id="content2-mobile" class="content hidden md:hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content3-mobile">CEO - GeekHeadSolutions</button>
+                    <div id="content3-mobile" class="content hidden md:hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Desktop View -->
+                    <div class="container">
+                    <button class="toggle-button p-2 w-full text-left hidden md:block " data-target="content1-desktop">Westerns Governors University - Noc Enginner</button>
+                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content2-desktop">The Oxford School - IT Coordinator</button>
+                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content3-desktop">CEO - GeekHeadSolutions</button>
+                </div>
+                </div>
+                
+                <!-- Work Experience Details for Desktop -->
+                <div class="w-2/3 ml-1 hidden md:block">
+                    <div id="content1-desktop" class="content hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <div id="content2-desktop" class="content hidden mt-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
+                        <ul class="pt-3 icon-plus">
+                            <li ></i>Lorem ipsum dolor sit amet.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="content3-desktop" class="content hidden mt-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
+                        <ul class="pt-3 icon-plus">
+                            <li ></i>Lorem ipsum dolor sit amet.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>    
+        </div>   
     </section>
 
 
 
     <!-- Footer -->
-    <footer class=" pb-3 ">
+    <footer class=" pb-3 bg-Blue1">
         <div class="container flex place-content-center px-7 pt-5 mx-auto space-y-8 md:space-y-0">
             <!-- Logo and social links container -->
             <div class="flex flex-col items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
                 <!-- Social Links Container -->
-                <div class="flex justify-center pt-5 space-x-4">
+                <div class="flex justify-center pt-5 space-x-8 md:space-x-16">
                     <!-- Link 1 -->
                     <a href="https://github.com/Castros" target="_blank" class="w-8"><i
-                            class="fa-brands fa-square-github scale-[2.5] h-8 text-white"></i></a>
+                            class="fa-brands fa-square-github scale-[1.5] h-8 md:scale-[2.5]  text-white"></i></a>
                     <!-- Link 2 -->
                     <a href="https://www.linkedin.com/in/ristian-castro-gonzalez/" target="_blank" class="w-8"><i
-                            class="fa-brands fa-linkedin scale-[2.5] h-8 text-white"></i></a>
+                            class="fa-brands fa-linkedin scale-[1.5] h-8 md:scale-[2.5] text-white"></i></a>
                     <!-- Link 3 -->
                     <a href="" target="_blank" class="w-8"><i
-                            class="fa-brands fa-twitter scale-[2.5] h-8 text-white"></i></a>
+                            class="fa-brands fa-twitter scale-[1.5] h-8 md:scale-[2.5] text-white"></i></a>
                     <!-- Link 4 -->
                     <a href="" target="_blank" class="w-8"><i
-                            class="fa-brands fa-youtube scale-[2.5] h-8 text-white"></i></a>
+                            class="fa-brands fa-youtube scale-[1.5] h-8 md:scale-[2.5] text-white"></i></a>
                     <!-- Link 4 -->
                     <a href="https://codepen.io/getter13" target="_blank" class="w-8"><i
-                            class="fa-brands fa-codepen scale-[2.5] h-8 text-white"></i></a>
+                            class="fa-brands fa-codepen scale-[1.5] h-8 md:scale-[2.5] text-white"></i></a>
                 </div>
             </div>
             <!-- Rights Reserved -->
         </div>
 
         <div class="flex flex-col text-center">
-            <p class="text-white">Designed & Build by Cristian Castro</p>
+            <p class="text-white">Designed & Built by Cristian Castro</p>
         </div>
 
     </footer>
-    <div class="" id="to-top-button">
+    <div class="hidden" id="to-top-button">
         <button onclick="goToTop()" title="Go To Top"
-            class="fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-DarkBlue text-white text-3xl font-bold">&uarr;</button>
+            class="fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=1.0.3" crossorigin="anonymous"></script>
+    <script src="dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
