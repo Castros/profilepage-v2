@@ -271,6 +271,14 @@
     transform: scale(1.5); /* Makes the SVG 1.5 times bigger */
 }
 
+.icon-plus li:before {
+  content: "+"; /* Unicode character for plus sign */
+  margin-right: 5px; /* Adjust spacing as needed */
+  color: red;
+  /* Additional styling to match your design */
+}
+
+
   @keyframes swing {
     20% {
       -webkit-transform: rotate(15deg);

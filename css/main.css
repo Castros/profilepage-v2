@@ -854,12 +854,6 @@ video {
   gap: 0.5rem;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1064,24 +1058,14 @@ video {
   padding: 1rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .px-2 {
@@ -1099,9 +1083,9 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pt-6 {
@@ -1126,6 +1110,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pb-3 {
@@ -1214,11 +1202,6 @@ video {
   letter-spacing: -0.025em;
 }
 
-.text-White2 {
-  --tw-text-opacity: 1;
-  color: hsl(0 4% 68% / var(--tw-text-opacity));
-}
-
 .text-Orange1 {
   --tw-text-opacity: 1;
   color: hsl(39 96% 48% / var(--tw-text-opacity));
@@ -1227,6 +1210,11 @@ video {
 .text-White1 {
   --tw-text-opacity: 1;
   color: hsl(0 0% 95% / var(--tw-text-opacity));
+}
+
+.text-White2 {
+  --tw-text-opacity: 1;
+  color: hsl(0 4% 68% / var(--tw-text-opacity));
 }
 
 .text-Blue2 {
@@ -1565,6 +1553,15 @@ video {
   /* Makes the SVG 1.5 times bigger */
 }
 
+.icon-plus li:before {
+  content: "+";
+  /* Unicode character for plus sign */
+  margin-right: 5px;
+  /* Adjust spacing as needed */
+  color: red;
+  /* Additional styling to match your design */
+}
+
 @-webkit-keyframes swing {
   20% {
     transform: rotate(15deg);
@@ -1625,14 +1622,14 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-Orange1:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(39 96% 48% / var(--tw-bg-opacity));
-}
-
 .hover\:bg-Blue1:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(214 93% 18% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-Orange1:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(39 96% 48% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-600:hover {
