@@ -55,6 +55,7 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  background-color: pink;
   /* 2 */
 }
 
@@ -645,6 +646,11 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mr-6 {
