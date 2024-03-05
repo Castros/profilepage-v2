@@ -36,20 +36,7 @@
                 <div class="pt-2">
                     <img class="animate__animated animate__bounceInLeft animate__delay-1s h-[100px] w-[100px]" src="img/pplogo.png" alt="" />
                 </div>
-                <!-- Menu Items -->
-
-                <!-- <div class="animate__animated animate__bounceInRight animate__delay-2s hidden text-center px-7 py-4 space-x-6 md:flex text-White2">
-                    <a href="#/" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Home</a>
-                    <a href="#aboutme" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">About Me</a>
-                    <a href="#projects-list" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Projects</a>
-                    <a href="#work-experience" class="pt-2 hover:text-Orange1 hover:font-bold  text-1xl">Work</a>
-
-                   
-                    <a href="https://drive.google.com/file/d/1qY81AkUDQlDmrKeRKoMNI8-ltlD9cD2z/view?usp=sharing"
-                        class=" p-3 px-6 pt-2 border border-Orange1  bg-transparent rounded-md baseline hover:bg-Orange1 hover:font-bold hover:text-White1 hidden md:block"
-                        target="_blank">Resume</a>
-                </div> -->
-                <!-- Hamburger Icon -->
+      
 
 
                 <button id="menu-btn" class="block hamburger focus:outline-none mr-6 animate__animated animate__bounceInRight animate__delay-2s">
@@ -63,10 +50,11 @@
             <div class="">
                 <div id="menu" class="absolute top-0 left-0 w-full text-2xl">
                     <div class=" space-y-4 text-center">
-                        <a href="#about-me" class="block py-2 hover:bg-Blue1 hover:text-Orange1" >About Me</a>
+                        <a href="#about-me" id="menu-a" class=" py-2 hover:bg-Blue1 hover:text-Orange1 animate__animated hidden" >About Me</a>
                         <a href="#projects-list" class="block py-2 hover:bg-Blue1 hover:text-Orange1">Projects</a>
                         <a href="#work-experience" class="block py-2 hover:bg-Blue1 hover:text-Orange1">Work</a>
-                        <a href="#contact-info" class="block py-2 hover:bg-Blue1 hover:text-Orange1">Contact</a>
+                        <a href="#contact-info" class="block py-2 hover:bg-Blue1 hover:text-Orange1" data-aos="fade-up"
+                        data-aos-delay="300">Contact</a>
                     </div>
             </div>
 
@@ -82,7 +70,7 @@
                     <p class="animate-section animate__animated animate__bounceInDown animate__delay-1s max-w-lg text-Orange1 md:text-1xl md:text-left">Hi, my
                         name is
                     </p>
-                    <h1 class="max-w-md text-4xl md:whitespace-nowrap font-bold md:text-6xl text-White1 md:text-left animate__animated  animate__flipInY delay-2-5s">
+                    <h1 class="max-w-md text-4xl md:whitespace-nowrap font-bold md:text-6xl text-White1 md:text-left animate__animated animate__backInLeft delay-2-5s">
                         Cristian Castro. </h1>
                     <h3 class="animate-section animate__animated animate__bounceInUp animate__delay-1s text-White2 text-6xl my-2 font-bold md:text-left">
                         Testing things out on the internet</h3>
@@ -179,6 +167,8 @@
             <div class="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-6">
 
                 <!-- First Project -->
+                <div data-aos="fade-right">
+
                 <div class="hidden flex-col items-center p-2 space-y-6 round-lg md:flex ">
                     <div aria-details="card"
                         class="relative border-none rounded-2xl flex w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-Blue2">
@@ -218,8 +208,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!-- Second Project -->
+                <div data-aos="flip-up">
+
                 <div class="hidden flex-col items-center p-2 space-y-6 round-lg md:flex">
                     <div aria-details="card"
                         class="relative flex rounded-2xl w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-gray-100">
@@ -260,8 +253,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <!-- Third Site -->
-
+                <div data-aos="fade-left">
                 <div class="hidden -scale-x-100 flex-col items-center p-2 space-y-6 round-lg md:flex">
                     <div aria-details="card"
                         class="relative flex rounded-2xl w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-gray-100">
@@ -302,6 +296,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
 
             </div>
@@ -374,7 +369,7 @@
     </div>
 </div>
 
-    </section>
+</section>
 
 
 
@@ -401,40 +396,85 @@
                 Work Exprience
             </h2>
 
-            <div class=" mt-10 flex flex-col md:flex-row px-5 "> 
+            <div class="container mx-5 mt-10 flex flex-col md:flex-row "> 
                 <!-- New View -->
                 <div class=" md:w-1/3 ml-1 work-exp mb-5 ">
                     <!-- Mobile View -->
                     <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content1-mobile">Westerns GU - Noc Enginner</button>
                     <div id="content1-mobile" class="content hidden md:hidden">
-                        Details about Oxford School...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
                     <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content2-mobile">The Oxford School - IT Coordinator</button>
                     <div id="content2-mobile" class="content hidden md:hidden">
-                        Details about Oxford School...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
                     <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content3-mobile">CEO - GeekHeadSolutions</button>
                     <div id="content3-mobile" class="content hidden md:hidden">
-                        Details about Oxford School...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
                     
                     <!-- Desktop View -->
-                    
+                    <div class="container">
                     <button class="toggle-button p-2 w-full text-left hidden md:block " data-target="content1-desktop">Westerns Governors University - Noc Enginner</button>
                     <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content2-desktop">The Oxford School - IT Coordinator</button>
                     <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content3-desktop">CEO - GeekHeadSolutions</button>
+                </div>
                 </div>
                 
                 <!-- Work Experience Details for Desktop -->
                 <div class="w-2/3 ml-1 hidden md:block">
                     <div id="content1-desktop" class="content hidden">
-                        Details about Oxford School...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
+                        <ul class="pt-3 icon-plus">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
                     </div>
                     <div id="content2-desktop" class="content hidden mt-4">
-                        Details about WGU...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
+                        <ul class="pt-3 icon-plus">
+                            <li ></i>Lorem ipsum dolor sit amet.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                     <div id="content3-desktop" class="content hidden mt-4">
-                        Details about GeekHeadSolutions...
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
+                        <ul class="pt-3 icon-plus">
+                            <li ></i>Lorem ipsum dolor sit amet.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
             </div>    
@@ -471,7 +511,7 @@
         </div>
 
         <div class="flex flex-col text-center">
-            <p class="text-white">Designed & Build by Cristian Castro</p>
+            <p class="text-white">Designed & Built by Cristian Castro</p>
         </div>
 
     </footer>
