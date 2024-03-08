@@ -3,15 +3,35 @@ const nav = document.getElementById('menu')
 const toTopButton = document.querySelector("#to-top-button");
 
 nav.classList.add('hidden');
+const menuItems = document.querySelectorAll('#menu a'); // Select all anchor tags inside the menu
 
+// Function to close the menu
+function closeMenu() {
+  nav.classList.add('hidden');
+  btn.classList.remove('open');
+}
+
+// Toggle menu open/close
 btn.addEventListener('click', function() {
-    if (nav.classList.contains('hidden')) {
-        nav.classList.remove('hidden');
-    } else {
-        nav.classList.add('hidden');
-    }
-    btn.classList.toggle('open');
+  nav.classList.toggle('hidden');
+  btn.classList.toggle('open');
 });
+
+// Attach click event to each menu item
+menuItems.forEach(item => {
+  item.addEventListener('click', closeMenu);
+});
+
+// Close the menu when scrolling begins
+window.addEventListener('scroll', closeMenu);
+// btn.addEventListener('click', function() {
+//     if (nav.classList.contains('hidden')) {
+//         nav.classList.remove('hidden');
+//     } else {
+//         nav.classList.add('hidden');
+//     }
+//     btn.classList.toggle('open');
+// });
 
 document.getElementById('menu-btn').addEventListener('click', function() {
     const menuLinks = document.querySelectorAll('#menu-a');

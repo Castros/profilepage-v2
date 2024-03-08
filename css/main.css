@@ -609,10 +609,6 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -621,8 +617,8 @@ video {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
+.right-0 {
+  right: 0px;
 }
 
 .bottom-8 {
@@ -1482,18 +1478,55 @@ video {
 /* Hamburger Menu */
 
 #menu {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  width: 250px;
+  height: 75vh;
   z-index: 1000;
   /* or any sufficiently high value */
-  background-color: #F29F05;
+  /* background-color: #F29F05;  */
+  background-color: rgba(242, 159, 5, 0.8);
   /* or any desired color */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: center;
+  /* this vertically centers your menu if the height is less than 100vh */
+}
+
+.menu-list{
+  padding-top: 60px;
+}
+
+.menu-item {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* optional separator */
 }
 
 #menu-btn{
+  position: fixed;
+  /* Fixed position relative to the viewport */
+  top: 80px;
+  /* Adjust the value to place the button from the top */
+  right: 40px;
+  /* Adjust the value to place the button from the right */
   z-index: 1001;
+  transition: top 0.25s, right 0.25s;
+  /* Smooth transition for the button */
 }
 
 .hamburger {
@@ -1525,23 +1558,46 @@ video {
   transform: translateY(14px);
 }
 
-.open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
+#menu-btn.open {
+  /* or absolute depending on your layout */
+  top: 30px;
+  /* Adjust this value as needed to place above the menu */
+  right: 90px;
+  /* Adjust this value as needed to align with the menu */
+  z-index: 1001;
+  /* Ensure it's above the menu */
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
-  color: red;
+  transform: rotate(45deg) translateY(-2px) translateX(2px);
 }
 
 .open .hamburger-middle {
-  display: none;
+  opacity: 0;
+  /* hides the middle bar instead of display: none for a fade effect */
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(-2px) translateX(-2px);
 }
+
+/* .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+    color: red;
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  } */
 
 .delay-2-5s {
   -webkit-animation-delay: 2.8s;
