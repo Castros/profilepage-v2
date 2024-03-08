@@ -55,7 +55,6 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
-  background-color: pink;
   /* 2 */
 }
 
@@ -1282,6 +1281,11 @@ video {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 /* Edit backgrond */
