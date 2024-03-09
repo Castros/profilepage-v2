@@ -1,383 +1,265 @@
-:root{
 
-}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body, html {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
+
 /* Edit backgrond */
 .bg-specs{
-    background-image: url(../img/blob-scatter-haikei.svg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../img/blob-scatter-haikei.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .desktop-view{
-  animation: bounce;
-  animation-duration: 3s;
+animation: bounce;
+animation-duration: 3s;
 }
 
-
-.popup {
-  background-color: #ffffff;
-  width: 450px;
-  padding: 30px 40px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 8px;
-  display: none;
-}
-
-.popup button {
-  display: block;
-  margin: 0 0 20px auto;
-  background-color: transparent;
-  font-size: 30px;
-  color: #c5c5c5;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.popup p {
-  font-size: 14px;
-  text-align: justify;
-  margin: 20px 0;
-}
-
-.popup a{
-  display: block;
-  width: 150px;
+.svg1 {
   position: relative;
-  margin: auto;
-  text-align: center;
-  background: #0f72e5;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px 0;
-}
-  .svg1 {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /* overflow: hidden; */
-    line-height: 0;
-    transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .svg1 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    /* height: 150px; */
-    transform: rotateY(180deg);
-    color:hsl(39, 96%, 48%);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  /* height: 150px; */
+  transform: rotateY(180deg);
+  color:hsl(39, 96%, 48%);
 }
-
-/* #projects-list{
-  background-color: #034873;
-} */
 
 .svg1 .shape-fill {
-    fill: hsl(39, 96%, 48%);
+  fill: hsl(39, 96%, 48%);
 }
 
-  .custom-shape-divider-top-1660016144 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.custom-shape-divider-top-1660016144 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1660016144 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    /* height: 137px; */
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  /* height: 137px; */
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-top-1660016144 .shape-fill {
-    fill: hsl(39, 96%, 48%);
+  fill: hsl(39, 96%, 48%);
 }
-.waves-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
 
-    
+.waves-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; 
 }
 
 .waves2 svg {
-    /* background-color: aquamarine; */
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    /* height: 550px; */
-    transform: rotateY(180deg);
+  /* background-color: aquamarine; */
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  /* height: 550px; */
+  transform: rotateY(180deg);
 }
 
 .waves2 .shape-fill {
-   fill:  #D9D9D9;
-    
+  fill:  #D9D9D9;
 } 
 
 .bg-svg3{
-    background-image: url(../img/circles.svg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../img/circles.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .waves-negative{
-    background-image: url(../img/wavesNegative.svg);
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../img/wavesNegative.svg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .work-exp{
-  border-left: 3px solid red;
-
+border-left: 3px solid red;
 }
 
 .toggle-button {
-  width: 80%;
-  transition: border-bottom 0.3s ease-in-out;
+width: 80%;
+transition: border-bottom 0.3s ease-in-out;
 }
+
 .work-exp .toggle-button:first-of-type::before {
-  opacity: 1;
+opacity: 1;
 }
 
 
 .active-work-title{
-  width: 75%;
-  border-bottom: 3px solid  green;
-  /* border-bottom-color:  linear-gradient(rgb(239, 65, 45), rgb(79, 41, 32)); */
-  
-  
+width: 75%;
+border-bottom: 3px solid  green;
 }
-
-
-/* .active-work-title:after {
-  content: '';
-  display: block;
-  /* position: relative; */
-  /* width: 80%;
-  border: 2px solid #898989;
-  margin-top: 8px; } */ */
-
 
 .ftbg {
-    background-color: #0E1025;
-
+  background-color: #0E1025;
 }
 
-  
-  @media (max-width: 576px) {
-    body {
-      background-position: 50px -50px;
-      background-size: 500px;
-    }
-  
-    #cta {
-      background-image: url('../img/bg-simplify-section-mobile.svg');
-    }
+
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
   }
-  
-  /* Hamburger Menu */
-  #menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 65vh;
-    z-index: 1000;  /* or any sufficiently high value */
-    /* background-color: #F29F05;  */
-    background-color: rgba(242, 159, 5, 0.8); /* or any desired color */
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   flex-direction: column;
-   justify-content: center; /* this vertically centers your menu if the height is less than 100vh */
+
+  #cta {
+    background-image: url('../img/bg-simplify-section-mobile.svg');
+  }
+}
+
+/* Hamburger Menu */
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 65vh;
+  z-index: 1000;  /* or any sufficiently high value */
+  background-color: rgba(242, 159, 5, 0.8); /* or any desired color */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: center; /* this vertically centers your menu if the height is less than 100vh */
 }
 
 .menu-list{
- padding-top: 60px;
+padding-top: 60px;
 }
 
 .menu-item {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 20px;
-  color: white;
-  padding: 15px 20px;
-  transition: background-color 0.3s ease;
+font-family: 'Helvetica', sans-serif;
+font-size: 20px;
+color: white;
+padding: 15px 20px;
+transition: background-color 0.3s ease;
 }
 
 .menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
+background-color: rgba(255, 255, 255, 0.2);
+cursor: pointer;
 }
 
 .menu-item:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional separator */
+border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional separator */
 }
 
 #menu-btn{
-  position: fixed; /* Fixed position relative to the viewport */
-  top: 70px; /* Adjust the value to place the button from the top */
-  right: 40px; /* Adjust the value to place the button from the right */
-  z-index: 1001;
-  transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
-
- 
+position: fixed; /* Fixed position relative to the viewport */
+top: 70px; /* Adjust the value to place the button from the top */
+right: 40px; /* Adjust the value to place the button from the right */
+z-index: 1001;
+transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 }
-  
-  .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
-  
-  }
-  
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background: #D9D9D9;
-    transform: rotate(0);
-    transition: all 0.5s;
-    
-  }
-  
-  .hamburger-middle {
-    transform: translateY(7px);
-  }
-  
-  .hamburger-bottom {
-    transform: translateY(14px);
-  }
 
-  #menu-btn.open {
-     /* or absolute depending on your layout */
-    top: 30px; /* Adjust this value as needed to place above the menu */
-    right: 90px; /* Adjust this value as needed to align with the menu */
-    z-index: 1001; /* Ensure it's above the menu */
-  }
-  
-  .open .hamburger-top {
-    transform: rotate(45deg) translateY(-2px) translateX(2px);
-  }
-  
-  .open .hamburger-middle {
-    opacity: 0; /* hides the middle bar instead of display: none for a fade effect */
-  }
-  
-  .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(-2px) translateX(-2px);
-  }
-  /* .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
-  }
-  
-  .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
-    color: red;
-  }
-  
-  .open .hamburger-middle {
-    display: none;
-  }
-  
-  .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
-  } */
 
-  .delay-2-5s {
-    animation-delay: 2.8s;
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #D9D9D9;
+  transform: rotate(0);
+  transition: all 0.5s; 
+}
+.hamburger-top.new-color {
+  background-color: yellow; /* Replace with the new color you want */
+  /* Add other style changes if needed */
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.hamburger-top.new-color,
+.hamburger-middle.new-color,
+.hamburger-bottom.new-color {
+  background-color: red; /* Replace with the new color you want */
+}
+
+#menu-btn.open {
+    /* or absolute depending on your layout */
+  top: 30px; /* Adjust this value as needed to place above the menu */
+  right: 90px; /* Adjust this value as needed to align with the menu */
+  z-index: 1001; /* Ensure it's above the menu */
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(-2px) translateX(2px);
+}
+
+.open .hamburger-middle {
+  opacity: 0; /* hides the middle bar instead of display: none for a fade effect */
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(-2px) translateX(-2px);
+}
+
+.delay-2-5s {
+  animation-delay: 2.8s;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .icon:hover {
-    transform: scale(1.5); /* Makes the SVG 1.5 times bigger */
+  transform: scale(1.5); /* Makes the SVG 1.5 times bigger */
 }
 
 .icon-plus li:before {
-  content: "+"; /* Unicode character for plus sign */
-  margin-right: 5px; /* Adjust spacing as needed */
-  color: red;
-  /* Additional styling to match your design */
+content: "+"; /* Unicode character for plus sign */
+margin-right: 5px; /* Adjust spacing as needed */
+color: red;
 }
-
-
-  /* @keyframes swing {
-    20% {
-      -webkit-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
-  
-    40% {
-      -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-      transform: rotate(-10deg);
-    }
-  
-    60% {
-      -webkit-transform: rotate(5deg);
-      -ms-transform: rotate(5deg);
-      transform: rotate(5deg);
-    }
-  
-    80% {
-      -webkit-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-      transform: rotate(-5deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  }
-  
-  .swing {
-    -webkit-transform-origin: top center;
-    -ms-transform-origin: top center;
-    transform-origin: top center;
-    -webkit-animation-name: swing;
-    animation-name: swing;
-  } */
-
-  @media (min-width: 993px) {
-
-  }

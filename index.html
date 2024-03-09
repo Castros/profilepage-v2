@@ -17,16 +17,6 @@
 
 <body class="">
 
-
-
-
-    <!-- Pop UP -->
-    <!-- <div class="popup">
-        <button id="close">&times;</button>
-        <h2 class="text-2xl">My Portfolio Page</h2>
-        <p> Hey thanks for visiting my page. I'm so exicted you are here this page is still a work in progress. I'm currently wokring on updating this page.</p>
-        <a href="/">Visit page</a>
-    </div> -->
     <!-- Navbar -->
     <section id="hero" class="bg-image bg-specs">
         <nav class="relative xs:mx-0 md:mx-auto xs:px-1 md:px-8 pt-6">
@@ -40,7 +30,7 @@
 
 
                 <button id="menu-btn" class="block hamburger focus:outline-none mr-6 animate__animated animate__bounceInRight animate__delay-2s">
-                    <span class="hamburger-top z-51"></span>
+                    <span id="hamburger-top" class="hamburger-top z-51"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
                 </button>
@@ -50,11 +40,11 @@
             <div class="">
                 <div id="menu" class="fixed top-0 right-0 w-full text-2xl">
                     <div class="menu-list space-y-4 text-center">
-                        <a href="#about-me" id="menu-a" class="menu-item py-2 hover:bg-Blue1 hover:text-Orange1 animate__animated hidden" >About Me</a>
+                        <a href="#about-me" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1" >About Me</a>
                         <a href="#projects-list" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Projects</a>
                         <a href="#work-experience" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Work</a>
-                        <a href="#contact-info" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1" data-aos="fade-up"
-                        data-aos-delay="300">Contact</a>
+                        <a href="#contact-info" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Contact</a>
+                        <a href="#contact-info" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Blog</a>
                     </div>
             </div>
 
@@ -63,7 +53,7 @@
 
         <!-- Flex Container -->
         <div id="about-me" class="container flex flex-col md:flex-row mx-auto md:px-56 items-stretch">
-            <!-- Left iten -->
+            <!-- Left item -->
             <div class="flex flex-col xs:pb-20 cent xs:pt-6 md:h-screen md:align-middle">
 
                 <div class="tracking-wide md:pt-16">
@@ -74,19 +64,15 @@
                         Cristian Castro. </h1>
                     <h3 class="animate-section animate__animated animate__bounceInUp animate__delay-1s text-White2 text-6xl my-2 font-bold md:text-left">
                         Testing things out on the internet</h3>
-                    <!-- <p class="max-w-lg text-White2 md:text-[18px] md:text-left">
-                            I'm an IT specialist who loves all things tech. From Layer 1 to layer 7.</p> -->
+                   
                 </div>
+                <!-- Whats -->
                 <div class="flex md:justify-end md:pt-4 hover:font-bold animate__animated animate__bounceInRight animate__delay-2s ">
-                    <!-- <a href="#"
-                        class="p-3 px-6 pt-2 border border-Orange1 text-White2 bg-transparent rounded-md baseline hover:bg-Orange1 hover:font-bold hover:text-White1">Contact
-                        Me</a> -->
                         <a href="https://wa.me/+528999595973" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 "><span class="text-White2 hover:font-bold hover:text-White1 p-3 ">Let's have a chat</span><svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512" class="icon"  ><path  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" fill="#F29F05" /></svg></a>
-                        <!-- <i class="fa-brands fa-whatsapp fa-2xl text-Orange1 hover:bg-blue-600"></i> -->
                 </div>
             </div>
-<!-- Whats -->
         </div>
+        
         <div class="svg1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -136,6 +122,7 @@
                         their business needs. </p>
                 </div>
             </div>
+            <!-- About me image -->
             <div class="md:w-2/5 md:flex flex items-center justify-center mt-10" data-aos="fade-up" data-aos-delay="500">
                 <img class="pic1 rounded-full -scale-x-100 md:shrink-0" src="img/po2.JPG" alt="">
             </div>
@@ -157,8 +144,8 @@
                 class="shape-fill"></path>
         </svg>
     </div>
-    <!-- Features Section -->
-    
+
+    <!-- Features Projects -->
     <section id="projects-list" class="bg-Grey1" href="#projects">
 
         <div class="max-w-5xl md:h-screen px-2 mx-auto text-center">
@@ -519,7 +506,7 @@
     </footer>
     <div class="hidden" id="to-top-button">
         <button onclick="goToTop()" title="Go To Top"
-            class="fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
+            class="fixed z-90 bottom-8 left-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
     </div>
     <script src="js/script.js?v=1.0.3" crossorigin="anonymous"></script>
     <script src="dist/aos.js"></script>

@@ -5,6 +5,20 @@ const toTopButton = document.querySelector("#to-top-button");
 nav.classList.add('hidden');
 const menuItems = document.querySelectorAll('#menu a'); // Select all anchor tags inside the menu
 
+document.addEventListener('scroll', function() {
+    const changeColorOffset = 250; // The number of pixels you need to scroll down to change the color
+    const hamburgerLines = document.querySelectorAll('.hamburger-top, .hamburger-middle, .hamburger-bottom');
+  
+    hamburgerLines.forEach(line => {
+      if (window.scrollY > changeColorOffset) {
+        line.classList.add('new-color');
+      } else {
+        line.classList.remove('new-color');
+      }
+    });
+  });
+  
+  
 // Function to close the menu
 function closeMenu() {
   nav.classList.add('hidden');
