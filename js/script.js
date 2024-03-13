@@ -132,6 +132,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// const buttons = document.querySelectorAll('.toggle-button');
+
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const targetId = button.dataset.target;
+//     const content = document.getElementById(targetId);
+//     content.classList.toggle('hidden');
+//   });
+// });
 
 
 // When the user scrolls down 200px from the top of the document, show the button
