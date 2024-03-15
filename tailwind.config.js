@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*html'], 
-  // content: ['./node_modules/flowbite/lib/esm/components/popover/index.js'],
+  content: ['./*html', './node_modules/flowbite/lib/esm/**/*.js'],
   
   theme: {
     screens: {
