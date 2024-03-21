@@ -326,10 +326,6 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
   
 }
  
-    #timeline-container:before{
-      display: none;
-    }
-
 }
 
 .icon {
