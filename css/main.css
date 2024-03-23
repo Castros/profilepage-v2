@@ -1922,16 +1922,6 @@ body, html {
   font-family: 'Helvetica', sans-serif;
 }
 
-/* Edit backgrond */
-
-/* .bg-specs{
-  background-image: url(../img/blob-scatter-haikei.svg);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
 .desktop-view{
   -webkit-animation: bounce;
           animation: bounce;
@@ -2055,12 +2045,6 @@ body, html {
   height: 90%;
   background: #CCD1D9;
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  #timeline-container:before {
-    display: none;
-  }
 }
 
 /* Hamburger Menu */
@@ -2252,10 +2236,6 @@ body, html {
     float: none;
     direction: ltr;
   }
-
-  #timeline-container:before{
-    display: none;
-  }
 }
 
 .icon {
@@ -2278,7 +2258,7 @@ body, html {
 }
 
 .zindex{
-  z-index: 1001;
+  z-index: 9999;
 }
 
 .list-contributions p {
@@ -2287,6 +2267,32 @@ body, html {
 
 .fa-circle{
   color:hsl(39, 96%, 48%)
+}
+
+@media (max-width: 768px) {
+  #timeline-container:before {
+    display: none;
+  }
+
+  #menu-btn{
+    position: fixed;
+    /* Fixed position relative to the viewport */
+    top: 55px;
+    /* Adjust the value to place the button from the top */
+    right: 15px;
+    /* Adjust the value to place the button from the right */
+    z-index: 1001;
+    transition: top 0.25s, right 0.25s;
+    /* Smooth transition for the button */
+  }
+
+  .pop-over{
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-wrap: wrap;
+  }
 }
 
 .hover\:w-\[600px\]:hover {
