@@ -13,6 +13,132 @@ animation: bounce;
 animation-duration: 3s;
 }
 
+/* Hamburger Menu */
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 50vh;
+  z-index: 1000;  /* or any sufficiently high value */
+  background-color: rgba(242, 159, 5, 0.8); /* or any desired color */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  justify-content: center; /* this vertically centers your menu if the height is less than 100vh */
+}
+
+.menu-list{
+padding-top: 60px;
+}
+
+.menu-item {
+font-family: 'Roboto Mono', monospace;
+font-size: 20px;
+color: white;
+padding: 15px 20px;
+transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+background-color: rgba(255, 255, 255, 0.2);
+cursor: pointer;
+}
+
+.menu-item:not(:last-child) {
+border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional separator */
+}
+
+#menu-btn{
+position: fixed; /* Fixed position relative to the viewport */
+top: 70px; /* Adjust the value to place the button from the top */
+right: 40px; /* Adjust the value to place the button from the right */
+z-index: 1001;
+transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #D9D9D9;
+  transform: rotate(0);
+  transition: all 0.5s; 
+}
+/* .hamburger-top.new-color {
+  background-color: hsl(235, 45%, 10%); /* Replace with the new color you want */
+  /* Add other style changes if needed */
+/* } */
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.hamburger-top.new-color,
+.hamburger-middle.new-color,
+.hamburger-bottom.new-color {
+  background-color: hsl(235, 45%, 10%); /* Replace with the new color you want */
+}
+
+#menu-btn.open {
+    /* or absolute depending on your layout */
+  top: 30px; /* Adjust this value as needed to place above the menu */
+  right: 90px; /* Adjust this value as needed to align with the menu */
+  z-index: 1001; /* Ensure it's above the menu */
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(-2px) translateX(2px);
+}
+
+.open .hamburger-middle {
+  opacity: 0; /* hides the middle bar instead of display: none for a fade effect */
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(-2px) translateX(-2px);
+}
+
+.home-sec {
+  font-optical-sizing: auto;
+  letter-spacing: 3px;
+}
+
+.home-sec p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+}
+
+.home-sec h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+}
+
+.home-sec h3{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+
+.home-sec a {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+}
+
 .svg1 {
   position: relative;
   top: 0;
@@ -97,19 +223,6 @@ animation-duration: 3s;
   background-size: cover;
 }
 
-.work-title h1{
-    color: #404040;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-.work-title h2 span{
-  color: #D9D9D9;
-}
 #work-exp{
   position: relative;
   overflow: hidden;
@@ -127,109 +240,6 @@ animation-duration: 3s;
   height: 90%;
   background: #CCD1D9;
   z-index: 1;
-}
-
-/* Hamburger Menu */
-#menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 65vh;
-  z-index: 1000;  /* or any sufficiently high value */
-  background-color: rgba(242, 159, 5, 0.8); /* or any desired color */
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  justify-content: center; /* this vertically centers your menu if the height is less than 100vh */
-}
-
-.menu-list{
-padding-top: 60px;
-}
-
-.menu-item {
-font-family: 'Helvetica', sans-serif;
-font-size: 20px;
-color: white;
-padding: 15px 20px;
-transition: background-color 0.3s ease;
-}
-
-.menu-item:hover {
-background-color: rgba(255, 255, 255, 0.2);
-cursor: pointer;
-}
-
-.menu-item:not(:last-child) {
-border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional separator */
-}
-
-#menu-btn{
-position: fixed; /* Fixed position relative to the viewport */
-top: 70px; /* Adjust the value to place the button from the top */
-right: 40px; /* Adjust the value to place the button from the right */
-z-index: 1001;
-transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
-}
-
-
-
-.hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
-}
-
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background: #D9D9D9;
-  transform: rotate(0);
-  transition: all 0.5s; 
-}
-/* .hamburger-top.new-color {
-  background-color: hsl(235, 45%, 10%); /* Replace with the new color you want */
-  /* Add other style changes if needed */
-/* } */
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
-.hamburger-top.new-color,
-.hamburger-middle.new-color,
-.hamburger-bottom.new-color {
-  background-color: hsl(235, 45%, 10%); /* Replace with the new color you want */
-}
-
-#menu-btn.open {
-    /* or absolute depending on your layout */
-  top: 30px; /* Adjust this value as needed to place above the menu */
-  right: 90px; /* Adjust this value as needed to align with the menu */
-  z-index: 1001; /* Ensure it's above the menu */
-}
-
-.open .hamburger-top {
-  transform: rotate(45deg) translateY(-2px) translateX(2px);
-}
-
-.open .hamburger-middle {
-  opacity: 0; /* hides the middle bar instead of display: none for a fade effect */
-}
-
-.open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(-2px) translateX(-2px);
 }
 
 .delay-2-5s {
@@ -273,7 +283,7 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 .timeline-content {
   width: 95%;
   padding: 0 15px;
-  color: #666
+  color: #666;
 }
 
 .timeline-content h3 {
@@ -288,7 +298,8 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
   color: #a4a4a4;
 }
 
-.timeline-content p {
+.timeline-content 
+.work-description {
   font-size: 14px;
   line-height: 1.5em;
   word-spacing: 1px;
@@ -332,15 +343,24 @@ color: red;
 .zindex{
   z-index: 9999;
 }
-
+.pop-over{
+  background-color: hsl(214, 93%, 18%);
+}
+.list-contributions{
+  
+}
 .list-contributions p {
   
   direction: ltr;
-  
+  color: rgb(219, 216, 216);
+  /* letter-spacing: 1px; */
+  font-family: 'Reddit Mono';
+  padding-bottom: 3px;
+ 
 }
 
 .fa-circle{
-  color:hsl(39, 96%, 48%)
+  color:hsl(39, 96%, 48%);
 }
 
 @media (max-width: 768px) {
@@ -354,6 +374,25 @@ color: red;
     z-index: 1001;
     transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
     }
+    .home-sec {
+      font-optical-sizing: auto;
+      /* letter-spacing: 1px; */
+    }
+    
+    .home-sec p {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 600;
+    }
+    
+    .home-sec h1{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+    }
+    
+    .home-sec h3{
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.8rem;
+    }  
 
     .pop-over{
       width: 100%;
