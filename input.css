@@ -5,7 +5,7 @@
 body, html {
 margin: 0;
 padding: 0;
-font-family: 'Helvetica', sans-serif;
+font-family: 'Roboto Mono', monospace;
 }
 
 .desktop-view{
@@ -103,7 +103,7 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(-2px) translateX(2px);
+  transform: rotate(45deg) translateY(-1px) translateX(4px);
 }
 
 .open .hamburger-middle {
@@ -111,7 +111,7 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(-2px) translateX(-2px);
+  transform: rotate(-45deg) translateY(2px) translateX(-2px);
 }
 
 .home-sec {
@@ -122,6 +122,7 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 .home-sec p {
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .home-sec h1{
@@ -131,12 +132,13 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 
 .home-sec h3{
   font-family: 'Roboto Mono', monospace;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .home-sec a {
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .svg1 {
@@ -226,18 +228,26 @@ transition: top 0.25s, right 0.25s; /* Smooth transition for the button */
 #work-exp{
   position: relative;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.work-title h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: #837f7f;
+  letter-spacing: 2px;
 }
 
 #timeline-container:before {
   content: '';
   position: absolute;
-  top: 9%;
-  bottom: 5%;
+  top: 11%;
+  bottom: 40%;
   left: 50%;
   margin-left: -1px;
   width: 2px;
-  height: 90%;
+  height: 80%;
   background: #CCD1D9;
   z-index: 1;
 }
@@ -390,7 +400,8 @@ color: red;
     }
     
     .home-sec h3{
-      font-family: 'Roboto Mono', monospace;
+      /* line-height: 20%; */
+      font-family: 'Open Sans', sans-serif;
       font-size: 0.8rem;
     }  
 
@@ -398,6 +409,11 @@ color: red;
       width: 100%;
       height: fit-content;
       text-wrap: wrap;
+    }
+
+    #to-top-button button{
+      margin-bottom: 50px;
+      z-index: 10000;
     }
 
 }
