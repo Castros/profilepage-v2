@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This a web developer Portfolio website. I create webpages work with opensource apps and work with VM's.">
     <meta name="keywords" content="web developer, developer, desarrollo, javascript, sheets, scripts, html, css, python">
-    <link rel="stylesheet" href="css/main.css?v=1.0.3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reddit+Mono:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?v=2.2.5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/bf381e8ade.js" crossorigin="anonymous"></script>
@@ -17,18 +20,8 @@
 
 <body class="">
 
-
-
-
-    <!-- Pop UP -->
-    <!-- <div class="popup">
-        <button id="close">&times;</button>
-        <h2 class="text-2xl">My Portfolio Page</h2>
-        <p> Hey thanks for visiting my page. I'm so exicted you are here this page is still a work in progress. I'm currently wokring on updating this page.</p>
-        <a href="/">Visit page</a>
-    </div> -->
     <!-- Navbar -->
-    <section id="hero" class="bg-image bg-specs">
+    <section id="hero" class="bg-Blue1 bg-image bg-specs">
         <nav class="relative xs:mx-0 md:mx-auto xs:px-1 md:px-8 pt-6">
             <!-- Flex container -->
             <div class="flex items-center justify-between">
@@ -40,7 +33,7 @@
 
 
                 <button id="menu-btn" class="block hamburger focus:outline-none mr-6 animate__animated animate__bounceInRight animate__delay-2s">
-                    <span class="hamburger-top z-51"></span>
+                    <span id="hamburger-top" class="hamburger-top z-51"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
                 </button>
@@ -50,11 +43,11 @@
             <div class="">
                 <div id="menu" class="fixed top-0 right-0 w-full text-2xl">
                     <div class="menu-list space-y-4 text-center">
-                        <a href="#about-me" id="menu-a" class="menu-item py-2 hover:bg-Blue1 hover:text-Orange1 animate__animated hidden" >About Me</a>
+                        <a href="#about-me" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1" >About Me</a>
                         <a href="#projects-list" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Projects</a>
-                        <a href="#work-experience" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Work</a>
-                        <a href="#contact-info" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1" data-aos="fade-up"
-                        data-aos-delay="300">Contact</a>
+                        <a href="#work-exp" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Work</a>
+                        <!-- <a href="#contact-info" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Contact</a> -->
+                        <a href="https://docs.google.com/document/d/1G5go2Vs3shV_56EKGjjU0uRPq6zJDdRy3WeQeriS7_Y/edit?usp=sharing" target="_blank" class="menu-item block py-2 hover:bg-Blue1 hover:text-Orange1">Resume</a>
                     </div>
             </div>
 
@@ -62,85 +55,71 @@
 
 
         <!-- Flex Container -->
-        <div id="about-me" class="container flex flex-col md:flex-row mx-auto md:px-56 items-stretch">
-            <!-- Left iten -->
-            <div class="flex flex-col xs:pb-20 cent xs:pt-6 md:h-screen md:align-middle">
+        <div id="home" class="container flex flex-col md:flex-row mx-auto md:px-56 items-stretch">
+            <!-- Left item -->
+            <div class=" home-sec flex flex-col xs:pb-20 cent xs:pt-6 md:h-screen md:align-middle">
 
-                <div class="tracking-wide md:pt-16">
-                    <p class="animate-section animate__animated animate__bounceInDown animate__delay-1s max-w-lg text-Orange1 md:text-1xl md:text-left">Hi, my
-                        name is
+                <div class="home-sec tracking-wide md:pt-16">
+                    <p class="animate-section animate__animated animate__bounceInDown animate__delay-1s max-w-lg text-Orange1 md:text-1xl md:text-left">Hi, my name is
                     </p>
-                    <h1 class="max-w-md text-4xl md:whitespace-nowrap font-bold md:text-6xl text-White1 md:text-left animate__animated  animate__flipInY delay-2-5s">
-                        Cristian Castro. </h1>
+                    <h1 class="max-w-md  md:whitespace-nowrap font-bold  text-White1 md:text-left animate__animated animate__backInLeft delay-2-5s">
+                        Cristian Castro </h1>
                     <h3 class="animate-section animate__animated animate__bounceInUp animate__delay-1s text-White2 text-6xl my-2 font-bold md:text-left">
-                        Testing things out on the internet</h3>
-                    <!-- <p class="max-w-lg text-White2 md:text-[18px] md:text-left">
-                            I'm an IT specialist who loves all things tech. From Layer 1 to layer 7.</p> -->
+                        Crafting the Digital Framework - From Code to Connectivity</h3>
+                   
                 </div>
+                <!-- Whats -->
                 <div class="flex md:justify-end md:pt-4 hover:font-bold animate__animated animate__bounceInRight animate__delay-2s ">
-                    <!-- <a href="#"
-                        class="p-3 px-6 pt-2 border border-Orange1 text-White2 bg-transparent rounded-md baseline hover:bg-Orange1 hover:font-bold hover:text-White1">Contact
-                        Me</a> -->
                         <a href="https://wa.me/+528999595973" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 "><span class="text-White2 hover:font-bold hover:text-White1 p-3 ">Let's have a chat</span><svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512" class="icon"  ><path  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" fill="#F29F05" /></svg></a>
-                        <!-- <i class="fa-brands fa-whatsapp fa-2xl text-Orange1 hover:bg-blue-600"></i> -->
                 </div>
             </div>
-<!-- Whats -->
-        </div>
-        <div class="svg1">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                    opacity=".25" class="shape-fill"></path>
-                <path
-                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                    opacity=".5" class="shape-fill"></path>
-                <path
-                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                    class="shape-fill"></path>
-            </svg>
         </div>
     </section>
 
-    <!-- About Me -->
-    <section id="aboutme" class="bg-Orange1">
+    <div class="svg1 m:h-screen bg-Blue1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
 
+    <!-- About Me -->
+    <section id="about-me" class="bg-Orange1">
         <!-- Flex Container -->
         <div
             class="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row  justify-center">
             <!-- About me Section -->
-
             <div class="md:w-2/5 px-6">
-
                 <h1 class="text-White1 pb-5 font-extrabold xs:text-3xl md:text-3xl xs:text-left md:text-left">
                     About
                     Me</h1>
                 <br>
                 <div class="about-me" data-aos="fade-down-left">
-                    <p class="text-center text-White1 md:text-left md:text-2xl" > HI! My
-                        name is Cristian and I enjoy working with all types of tech. My interset started when I built my
-                        first gaming computer and then converted into a hackintosh. I have been working with all types
-                        of
-                        tech since then. One of my passion is to write code to help with productivity or just build a
-                        website for a friend.
+                    <p class="text-center text-White1 md:text-left md:text-2xl" > HI! My name is Cristian and I love working with all kinds of technology. My interest in tech began when I built my first gaming computer and turned it into a Hackintosh. Since then, I've been exploring and working with different types of technology.
                         <br>
                         <br>
-                        Fast forward to today, and I've the privilega of implmenting software using cloud technologies
-                        tools, and working with opensource apps to help my current employer with productivity for
-                        employees.
+                        I enjoy writing code to improve productivity or to create websites for friends. Along the way, I've also done a lot of cabling work for businesses, ensuring their networks are robust and reliable.
                         <br>
                         <br>
-                        I also work on desinning networks for business who need to virtualization and cloud services for
-                        their business needs. </p>
+                        Fast forward to today, I've had the opportunity to work on projects that use cloud technology and open-source apps to help my current employer improve employee productivity.
+                        <br>
+                        <br>
+                        I also design network solutions for businesses that need virtualization and cloud services. This helps them meet their technology needs in a more efficient way.</p>
                 </div>
             </div>
+            <!-- About me image -->
             <div class="md:w-2/5 md:flex flex items-center justify-center mt-10" data-aos="fade-up" data-aos-delay="500">
                 <img class="pic1 rounded-full -scale-x-100 md:shrink-0" src="img/po2.JPG" alt="">
             </div>
         </div>
-
-
     </section>
 
     <div class="custom-shape-divider-top-1660016144 m:h-screen bg-Grey1">
@@ -156,9 +135,9 @@
                 class="shape-fill"></path>
         </svg>
     </div>
-    <!-- Features Section -->
-    <section id="projects-list" class="bg-Grey1" href="#projects">
 
+    <!-- Features Projects -->
+    <section id="projects-list" class="bg-Grey1" href="#projects">
         <div class="max-w-5xl md:h-screen px-2 mx-auto text-center">
             <h2 class="text-4xl pt-10 font-bold text-center text-Blue2">
                 Some projects I have created
@@ -167,6 +146,8 @@
             <div class="flex flex-col justify-center items-center mt-24 md:flex-row md:space-x-6">
 
                 <!-- First Project -->
+                <div data-aos="fade-right">
+
                 <div class="hidden flex-col items-center p-2 space-y-6 round-lg md:flex ">
                     <div aria-details="card"
                         class="relative border-none rounded-2xl flex w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-Blue2">
@@ -206,8 +187,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!-- Second Project -->
+                <div data-aos="flip-up">
+
                 <div class="hidden flex-col items-center p-2 space-y-6 round-lg md:flex">
                     <div aria-details="card"
                         class="relative flex rounded-2xl w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-gray-100">
@@ -248,8 +232,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <!-- Third Site -->
-
+                <div data-aos="fade-left">
                 <div class="hidden -scale-x-100 flex-col items-center p-2 space-y-6 round-lg md:flex">
                     <div aria-details="card"
                         class="relative flex rounded-2xl w-[300px] hover:w-[600px] transition-all  duration-1000 ease-in-out h-96 overflow-hidden bg-gray-100">
@@ -290,11 +275,10 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
-        </div>
+    </div>
+</div>
 
 
 
@@ -367,9 +351,9 @@
 
 
 
-    <!-- Work Experience Section -->
-    <section id="work-experience" class="bg-svg3">
-        <div class="md:h-screen">
+   
+   
+        <div class="bg-svg3">
             <div class="waves2">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -384,95 +368,109 @@
                         class="shape-fill"></path>
                 </svg>
             </div>
-            <!-- Title -->
-            <h2 class="text-4xl font-bold py-7 text-center">
-                Work Exprience
-            </h2>
+        </div>
 
-            <div class=" mt-10 flex flex-col md:flex-row "> 
-                <!-- New View -->
-                <div class=" md:w-1/3 ml-1 work-exp mb-5 ">
-                    <!-- Mobile View -->
-                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content1-mobile">Westerns GU - Noc Enginner</button>
-                    <div id="content1-mobile" class="content hidden md:hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
-                        <ul class="pt-3 icon-plus">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content2-mobile">The Oxford School - IT Coordinator</button>
-                    <div id="content2-mobile" class="content hidden md:hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
-                        <ul class="pt-3 icon-plus">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    <button class="toggle-button p-2 w-full text-left md:hidden " data-target="content3-mobile">CEO - GeekHeadSolutions</button>
-                    <div id="content3-mobile" class="content hidden md:hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
-                        <ul class="pt-3 icon-plus">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Desktop View -->
-                    <div class="container">
-                    <button class="toggle-button p-2 w-full text-left hidden md:block " data-target="content1-desktop">Westerns Governors University - Noc Enginner</button>
-                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content2-desktop">The Oxford School - IT Coordinator</button>
-                    <button class="toggle-button p-2 w-full text-left hidden md:block mt-4 " data-target="content3-desktop">CEO - GeekHeadSolutions</button>
-                </div>
-                </div>
-                
-                <!-- Work Experience Details for Desktop -->
-                <div class="w-2/3 ml-1 hidden md:block">
-                    <div id="content1-desktop" class="content hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, adipisci ab? Dignissimos blanditiis cupiditate odit, iusto id ut veniam voluptate soluta consequatur architecto et consequuntur neque ipsum accusamus possimus laudantium?</p>
-                        <ul class="pt-3 icon-plus">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    <div id="content2-desktop" class="content hidden mt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
-                        <ul class="pt-3 icon-plus">
-                            <li ></i>Lorem ipsum dolor sit amet.</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div id="content3-desktop" class="content hidden mt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at asperiores doloribus necessitatibus veniam omnis magnam minima velit vitae! Sit.</p>
-                        <ul class="pt-3 icon-plus">
-                            <li ></i>Lorem ipsum dolor sit amet.</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+         <!-- Work Experience Section -->
+<section class="container mx-auto pb-10 pt-3" id="work-exp">
+    <div class="work-title">
+        <h1 class="text-center py-5">Work Experience</h1>
+    </div>
+    <div class="timeline-block timeline-block-right" id="timeline-container">
+        <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>NOC Engineer</h3>
+                <h4>Western Governors University</h4>
+                <span>October 2022 - Present</span>
+                <p class="work-description">As a NOC Engineer at Western Governors University, I am responsible for maintaining and optimizing network operations to ensure seamless functionality and performance. My role involves a high level of technical prowess and problem-solving skills to manage complex network systems and ensure uptime and efficiency. <a class="text-blue-600 underline dark:text-blue-500 hover:no-underline" data-popover-target="popover-image"> Key Contributions </a> </p>
+                <div data-popover id="popover-image" role="tooltip" class="pop-over zindex absolute invisible inline-block bg-Blue2 text-sm  transition-opacity duration-300 border border-gray-200 rounded-lg shadow-sm opacity-0 w-96  dark:bg-gray-800 dark:border-gray-600">
+                    <div class="grid grid-cols-1">
+                        <div class="col-span-1 p-3">
+                            <div class="space-y-2">
+                                <ul class="list-contributions text-sm ">
+                                    <p><i class="fa-regular fa-circle"></i> Implemented ITIL processes for incident management, significantly improving response times and system uptime.</p>
+                                    <p><i class="fa-regular fa-circle"></i> Developed and maintained advanced monitoring and alerting systems using Dynatrace, Opsgenie, and Grafana, leading to improved system insights and performance.</p>
+                                    <p><i class="fa-regular fa-circle"></i> Proficient in administering and building physical servers for Proxmox and VMware hypervisors.</p>
+                                    <p><i class="fa-regular fa-circle"></i> Script creationg with python for automating some jobs</p>
+                                    <p><i class="fa-regular fa-circle"></i> Expertise in user administration across a variety of platforms including Active Directory, Exchange, and Salesforce, ensuring secure and efficient access control.</p>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>    
-        </div>   
-    </section>
+            </div>
+        </div>
+
+    <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+                <div class="timeline-content">
+                    <h3>Founder, Geek Head Solutions</h3>
+                    <h4>Reynosa, Mexico</h4>
+                    <span>May 2018 - Present</span>
+                    <p class="work-description"> Founded and lead Geek Head Solutions, a dynamic IT firm specializing in custom website development, business cabling, and network setup solutions. Leveraging deep technical expertise and a client-centric approach, I deliver tailored IT services that enhance business operations and online presence. My role encompasses end-to-end project management, from conceptual design to implementation, showcasing leadership in navigating complex IT challenges and driving operational excellence. <a class="text-blue-600 underline dark:text-blue-500 hover:no-underline" data-popover-target="popover-image1"> Key Contributions </a> </p>
+                        <div data-popover id="popover-image1" role="tooltip" class="pop-over absolute zindex invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:text-gray-400  dark:border-gray-600">
+                            <div class="grid grid-cols-1">
+                                <div class="col-span-1 p-3">
+                                    <div class="space-y-2">
+                                        <div class="list-contributions text-sm text-gray-500 ">
+                                            <p><i class="fa-regular fa-circle"></i> Spearheaded the creation of a versatile IT solutions company, offering customized services including web development, business cabling, and network setup.</p>
+                                            <p><i class="fa-regular fa-circle"></i> Design and implement comprehensive web solutions, ensuring functional and aesthetically pleasing websites tailored to client specifications..</p>
+                                            <p><i class="fa-regular fa-circle"></i> Expertly conduct business cabling and network installations, ensuring optimized infrastructure setup for client operations.</p>
+                                            <p><i class="fa-regular fa-circle"></i> Lead projects from conception through to execution, demonstrating strong leadership, project management, and technical problem-solving skills..</p>
+                                            <p><i class="fa-regular fa-circle"></i> Oversee all aspects of business operations, including client relations, project management, procurement, and strategic planning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+     </div>
+
+<div class="timeline-block timeline-block-right">
+<div class="marker"></div>
+<div class="timeline-content">
+<h3>IT Coordinator / System Administrator</h3>
+<h4> Oxford School of Reynosa</h4>
+<span>May 2016 - October 2022</span>
+<p class="work-description"> I specialized in deploying open-source applications on Linux servers, extensive system administration across Linux/Unix and Windows environments, and managing Google Workspace. My role encompassed automating system tasks, ensuring network and data security, and overseeing inventory management. I also contributed to network design and infrastructure development for new buildings, demonstrating a blend of technical expertise and strategic project management. <a class="text-blue-600 underline dark:text-blue-500 hover:no-underline" data-popover-target="popover-image2"> Key Contributions </a> </p>
+<div data-popover id="popover-image2" role="tooltip" class="pop-over absolute zindex invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+<div class="grid grid-cols-1">
+<div class="col-span-1 p-3">
+<div class="space-y-2">
+<ul class="list-contributions text-sm text-gray-500 ">
+<p><i class="fa-regular fa-circle"></i> Specialized in deploying open-source applications on Linux servers, including database and user maintenance, and code customization</p>
+<p><i class="fa-regular fa-circle"></i> Extensive experience with both Linux/Unix (over 4 years) and Windows Server/Desktop environments (7 years).</p>
+<p><i class="fa-regular fa-circle"></i> Proficient in administering and building physical servers for Proxmox and VMware hypervisors.</p>
+<p><i class="fa-regular fa-circle"></i> Seven years as a Google Workspace Administrator, with a strong focus on custom coding in Google Sheets for domain-wide user interaction.</p>
+<p><i class="fa-regular fa-circle"></i> Experienced in network design and infrastructure setup for new buildings, including hardware procurement and contractor management.</p>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- <div class="timeline-block timeline-block-left">
+<div class="marker"></div>
+<div class="timeline-content">
+<h3>Fourth Year</h3>
+<span>Some work experience</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+</div>
+</div>
+
+<div class="timeline-block timeline-block-right">
+<div class="marker"></div>
+<div class="timeline-content">
+<h3>Fifth Year</h3>
+<span>Some work experience</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+</div>
+</div>
+</div>     -->
+</section>
+      
+
 
 
 
@@ -510,10 +508,11 @@
     </footer>
     <div class="hidden" id="to-top-button">
         <button onclick="goToTop()" title="Go To Top"
-            class="fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
+            class="fixed z-90 bottom-8 left-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-700 text-white text-3xl font-bold">&uarr;</button>
     </div>
     <script src="js/script.js?v=1.0.3" crossorigin="anonymous"></script>
     <script src="dist/aos.js"></script>
+    <script src="dist/flowbite/dist/flowbite.min.js"></script>
     <script>
         AOS.init();
     </script>
