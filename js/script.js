@@ -36,16 +36,8 @@ menuItems.forEach(item => {
   item.addEventListener('click', closeMenu);
 });
 
-// Close the menu when scrolling begins
 window.addEventListener('scroll', closeMenu);
-// btn.addEventListener('click', function() {
-//     if (nav.classList.contains('hidden')) {
-//         nav.classList.remove('hidden');
-//     } else {
-//         nav.classList.add('hidden');
-//     }
-//     btn.classList.toggle('open');
-// });
+
 
 document.getElementById('menu-btn').addEventListener('click', function() {
     const menuLinks = document.querySelectorAll('#menu-a');
