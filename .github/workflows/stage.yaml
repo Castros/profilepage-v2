@@ -1,7 +1,8 @@
 on:
   push:
     branches:
-      - staging
+      - stage
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
