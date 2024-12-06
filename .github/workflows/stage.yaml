@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - stage
 
 jobs:
   web-deploy:
@@ -15,7 +15,7 @@ jobs:
     - name: deploy to S3
       uses: jakejarvis/s3-sync-action@master
       with:
-        args: --delete
+        args: --delete --exclude '.git/*' --exclude '.github/*'
       env:
         AWS_S3_BUCKET: cristiangcastro.com
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
