@@ -1193,6 +1193,10 @@ input[type="range"]::-ms-fill-lower {
   height: 2.25rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -1231,6 +1235,24 @@ input[type="range"]::-ms-fill-lower {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[320px\] {
+  width: 320px;
+}
+
+.w-\[340px\] {
+  width: 340px;
+}
+
+.min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .max-w-lg {
@@ -1310,6 +1332,11 @@ input[type="range"]::-ms-fill-lower {
 }
 
 .-scale-x-100 {
+  --tw-scale-x: -1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-x-\[-1\] {
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1472,6 +1499,10 @@ input[type="range"]::-ms-fill-lower {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-l-lg {
@@ -2287,9 +2318,6 @@ body, html {
   background-color: hsl(214, 93%, 18%);
 }
 
-.list-contributions{
-}
-
 .list-contributions p {
   direction: ltr;
   color: rgb(219, 216, 216);
@@ -2354,8 +2382,28 @@ body, html {
   }
 }
 
+.hover\:h-\[680px\]:hover {
+  height: 680px;
+}
+
 .hover\:w-\[600px\]:hover {
   width: 600px;
+}
+
+.hover\:w-\[640px\]:hover {
+  width: 640px;
+}
+
+.hover\:w-\[60px\]:hover {
+  width: 60px;
+}
+
+.hover\:w-\[px\]:hover {
+  width: px;
+}
+
+.hover\:w-\[680px\]:hover {
+  width: 680px;
 }
 
 .hover\:scale-150:hover {
